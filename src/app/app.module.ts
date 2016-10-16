@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { Users } from '../pages/users/users';
 import { Repos } from '../pages/repos/repos';
 import { Orgs } from '../pages/orgs/orgs';
+import { UserDetails } from '../pages/user-details/user-details';
 import { GithubUsers } from '../providers/github-users';
 
 @NgModule({
@@ -11,7 +12,8 @@ import { GithubUsers } from '../providers/github-users';
     MyApp,
     Users,
     Repos,
-    Orgs
+    Orgs,
+    UserDetails
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -21,7 +23,8 @@ import { GithubUsers } from '../providers/github-users';
     MyApp,
     Users,
     Repos,
-    Orgs
+    Orgs,
+    UserDetails
   ],
   providers: [ GithubUsers ]
 })
