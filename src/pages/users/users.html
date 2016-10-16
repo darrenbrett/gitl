@@ -11,7 +11,7 @@
     <ion-list>
       <button ion-item *ngFor="let user of users">
         <ion-avatar item-left>
-          <img [src]="user/avatar_url">
+          <img [src]="user.avatar_url">
         </ion-avatar>
         <h2>{{ user.login }}</h2>
         <ion-icon name="arrow-forward" item-right></ion-icon>
