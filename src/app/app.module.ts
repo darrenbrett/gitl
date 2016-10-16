@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { Users } from '../pages/users/users';
 import { Repos } from '../pages/repos/repos';
 import { Orgs } from '../pages/orgs/orgs';
+import { GithubUsers } from '../providers/github-users';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,6 @@ import { Orgs } from '../pages/orgs/orgs';
     Repos,
     Orgs
   ],
-  providers: []
+  providers: [ GithubUsers ]
 })
 export class AppModule {}
